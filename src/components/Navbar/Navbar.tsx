@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { HomeOutlined, LogoutOutlined, HeartOutlined } from "@ant-design/icons";
+import { HomeOutlined, LogoutOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Button, Menu } from "antd";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -20,24 +20,6 @@ const NavBar = () => {
       ),
       key: "/",
       icon: <HomeOutlined style={{ fontSize: 20 }} />,
-    },
-    {
-      key: "/login",
-      label: (
-        <Link className={styles.lables} to="/login">
-          Log in
-        </Link>
-      ),
-      icon: <HeartOutlined style={{ fontSize: 20 }} />,
-    },
-    {
-      key: "/signup",
-      label: (
-        <Link className={styles.lables} to="/signup">
-          Log in
-        </Link>
-      ),
-      icon: <HeartOutlined style={{ fontSize: 20 }} />,
     },
   ];
   useEffect(() => {
